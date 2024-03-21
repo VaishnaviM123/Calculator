@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Calculator</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width" />
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+  <body>
+    <div class="container">
+        <div id="container">
+            <form name="calculator" id="calc">
+                <input id="display" type="text" name="display" readonly>
+                <input class="button digits" onclick="displayData(7)" type="button" value="7">
+                <input class="button digits" onclick="displayData(8)" type="button" value="8">
+                <input class="button digits" onclick="displayData(9)" type="button" value="9">
+                <input class="button digits" id="mathButtons" onclick="displayData('+')" type="button" value="+">
+                <br>
+                <input class="button digits" onclick="displayData(4)" type="button" value="4">
+                <input class="button digits" onclick="displayData(5)" type="button" value="5">
+                <input class="button digits" onclick="displayData(6)" type="button" value="6">
+                <input class="button digits" id="mathButtons" onclick="displayData('-')" type="button" value="-">
+                <br>
+                <input class="button digits" onclick="displayData(1)" type="button" value="1">
+                <input class="button digits" onclick="displayData(2)" type="button" value="2">
+                <input class="button digits" onclick="displayData(3)" type="button" value="3">
+                <input class="button digits" id="mathButtons" onclick="displayData('*')" type="button" value="x">
+                <br>
+                <input class="button digits" onclick="displayData('.')" type="button" value=".">
+                <input class="button digits" onclick="displayData(0)" type="button" value="0">
+                <input class="button digits" id="mathButtons" onclick="displayData('%')" type="button" value="%">
+                <input class="button digits" id="mathButtons" onclick="displayData('/')" type="button" value="/">
+                <br>
+                <input id="clearButton" class="button" onclick="offCalc()" type="button" value="OFF">
+                <input id="clearButton" class="button" onclick="allClear()" type="button" value="AC">
+                <input id="clearButton" class="button" onclick="deleteData()" type="button" value="DEL">
+                <input class="button digits" id="mathButtons" onclick="result()" type="button" value="=">
+            </form>
+        </div>
+    </div>
+</body>
+<script src="./Calculator.js"></script>
+</html>
